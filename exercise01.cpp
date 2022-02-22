@@ -8,8 +8,8 @@ int main() {
  for (int r = 0; r < 5; r++) {
      cout << setw(5) << r+1 << setw(12) 
           <<  names[r] << setw(10)
-          << marks[r] << endl;
+          << setprecision(2) << setiosflags(ios::fixed)<< marks[r] << endl;
  }
 }
 
-//<< setiosflags(ios::fixed) 
+// 
